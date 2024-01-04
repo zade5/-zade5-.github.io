@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications</title>
+    <link rel="icon" href="icon2.png">
+    
+    <style>
+        img{
+            display: block;
+            margin: auto;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            
+
+        }
+
+        header {
+            background-color: #141414;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section {
+            padding: 50px;
+        }
+
+        h1, h2 {
+            color:#0ef5e3;
+        }
+
+        .button {
+            margin: 0;
+            height: auto;
+            background: transparent;
+            padding: 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button {
+            --border-right: 6px;
+            --text-stroke-color: #0ef5e3;
+            --animation-color: #0ef5e3;
+            --fs-size: 2em;
+            letter-spacing: 3px;
+            text-decoration: none;
+            font-size: var(--fs-size);
+            font-family: "Arial";
+            position: relative;
+            text-transform: uppercase;
+            color: transparent;
+            -webkit-text-stroke: 1px var(--text-stroke-color);
+        }
+
+        .hover-text {
+            position: absolute;
+            box-sizing: border-box;
+            content: attr(data-text);
+            color: var(--animation-color);
+            width: 0%;
+            inset: 0;
+            border-right: var(--border-right) solid var(--animation-color);
+            overflow: hidden;
+            transition: 0.5s;
+            -webkit-text-stroke: 1px var(--animation-color);
+        }
+
+        .button:hover .hover-text {
+            width: 100%;
+            filter: drop-shadow(0 0 23px var(--animation-color))
+        }
+        #background-video {
+          width: 100vw;
+          height: 100vh;
+          object-fit: cover;
+          position: fixed;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          z-index: -1;
+        
+         }
+    </style>
+</head>
+
+<body>
+    <video id="background-video" autoplay loop muted >
+        <source src="spacewizards.mp4" type="video/mp4">
+        </video>
+    <nav>
+        <ul>
+            <li><a href="home.html">
+                    <button class="button" data-text="Awesome">
+                        <span class="actual-text">&nbsp;Home&nbsp;</span>
+                        <span aria-hidden="true" class="hover-text">&nbsp;Home&nbsp;</span>
+                    </button>
+                </a></li>
+            <li><a href="publications.html">
+                    <button class="button" data-text="Awesome">
+                        <span class="actual-text">&nbsp;Publications&nbsp;</span>
+                        <span aria-hidden="true" class="hover-text">&nbsp;Publications&nbsp;</span>
+                    </button>
+                </a></li>
+            <li><a href="about.html">
+                    <button class="button" data-text="Awesome">
+                        <span class="actual-text">&nbsp;About&nbsp;</span>
+                        <span aria-hidden="true" class="hover-text">&nbsp;About&nbsp;</span>
+                    </button>
+                </a></li>
+
+        </ul>
+    </nav>
+    <section id="publications">
+        <h2>Publications</h2>
+        <p>Explore our latest publications, research papers, and contributions to the astrophysics community.</p>
+
+        <!-- Article 1 -->
+        <article>
+            <header>
+                <h1>NASA Telescopes Discover Record-Breaking Black Hole</h1>
+                <p class="author">By: Lee Mohon</p>
+                <p class="date">Published on: November 06, 2023</p>
+            </header>
+
+            <section>
+                <p>
+                    Astronomers have discovered the most distant black hole yet seen in X-rays, using NASA telescopes. The black hole is at an early stage of growth that had never been witnessed before, where its mass is similar to that of its host galaxy.
+
+                </p>
+
+                <p>
+                    By combining data from NASA’s Chandra X-ray Observatory and NASA’s James Webb Space Telescope, a team of researchers was able to find the telltale signature of a growing black hole just 470 million years after the big bang.tronomers found the most distant black hole ever detected in X-rays (in a galaxy dubbed UHZ1) using the Chandra and Webb space telescopes. X-ray emission is a telltale signature of a growing supermassive black hole. This result may explain how some of the first supermassive black holes in the universe formed. These images show the galaxy cluster Abell 2744 that UHZ1 is located behind, in X-rays from Chandra and infrared data from Webb, as well as close-ups of the black hole host galaxy UHZ1.
+                </p>
+                <img src="uhz1.webp" alt="blackhole " width="800px">
+
+
+   
+
+            </section>
+        </article>
+
+        <article>
+            <header>
+                <h1>The Moon illusion</h1>
+                <p class="author">By:Alishba Khan</p>
+                <p class="date">Published on: August 27, 2023</p>
+            </header>
+            
+            <section>
+                <p>
+                    Another possibility is the famous Ponzo illusion. If you’ve ever tried to draw in perspective, you know that the closer something is to the horizon, the smaller you should try to draw it. Our brain compensates for it automatically by perceiving the objects near the horizon as large as they actually appear. The two yellow lines in this drawing are of the same size, but the upper one seems to be bigger because we interpret it as receding farther into the horizon.
+                </p>
+
+                <p>
+                    But if its just our brain autocorrecting, the size of objects near the horizon then we did expect the moon illusion to be visible inside a planetarium, where the whole sky including the horizon displayed overhead a spherical dome. However, studies have shown that this is not the case. To make matters worse, it seems that the moon illusion entirely disappears if you bend over upside down and look at the moon between your legs. Now this is getting ridiculous.
+                </p>
+                <img src="Picture1_blackbackground.jpg" alt="MOON ILLUSION" width="900px">
+               
+
+
+            </section>
+        </article>
+        <article>
+            <header>
+                <h1>The Marshall Star</h1>
+                <p class="author">By:NASA</p>
+                <p class="date">Published on:  November 22, 2023</p>
+            </header>
+
+            <section>
+                <p>
+                    Artemis II NASA astronauts Reid Wiseman and Christina Koch of NASA, and CSA (Canadian Space Agency) astronaut Jeremy Hansen viewed the core stage for the SLS (Space Launch System) rocket at the agency’s Michoud Assembly Facility on Nov. 16. The three astronauts, along with NASA’s Victor Glover, will launch atop the rocket stage to venture around the Moon on Artemis II, the first crewed flight for Artemis.
+                </p>
+
+                <p>
+                    The SLS core stage, towering at 212 feet, is the backbone of the Moon rocket and includes two massive propellant tanks that collectively hold 733,000 gallons of propellant to help power the stage’s four RS-25 engines. NASA, Boeing, the core stage lead contractor, along with Aerojet Rocketdyne, an L3Harris Technologies company and the RS-25 engines lead contractor, are in the midst of conducting final integrated testing on the fully assembled rocket stage. At launch and during ascent to space, the Artemis astronauts inside NASA’s Orion spacecraft will feel the power of the rocket’s four RS-25 engines producing more than 2 million pounds of thrust for a full eight minutes. The mega rocket’s twin solid rocket boosters, which flank either side of the core stage, will each add an additional 3.6 million pounds of thrust for two minutes.
+                </p>
+                <img src="grb150101b_combined.webp" alt="marshall star" width="600px">
+
+
+            </section>
+        </article>
+        <article>
+            <header>
+                <h1>The Marshall Star</h1>
+                <p class="author">By:NASA</p>
+                <p class="date">Published on:  November 22, 2023</p>
+            </header>
+
+            <section>
+                <p>
+                    Skylab 4 astronauts Gerald P. Carr, Edward G. Gibson, and William R. Pogue were the first crew to celebrate Thanksgiving in space on Nov. 22, 1973. On that day, their seventh of an 84-day mission, Gibson and Pogue completed a 6-hour and 33-minute spacewalk, while Carr remained in the Multiple Docking Adaptor with no access to food. All three made up for missing lunch by consuming two meals at dinner time, although neither included special items for Thanksgiving.
+                </p>
+
+                <p>
+                    Twelve years passed before the next orbital Thanksgiving celebration. On Nov. 28, 1985, the seven-member crew of STS-61B, NASA astronauts Brewster H. Shaw, Bryan D. O’Connor, Jerry L. Ross, Mary L. Cleave, and Sherwood C. “Woody” Spring, and payload specialists Charles D. Walker from the United States and Rodolfo Neri Vela from Mexico, feasted on shrimp cocktail, irradiated turkey, and cranberry sauce aboard the space shuttle Atlantis. Neri Vela introduced tortillas to space menus, and they have remained favorites among astronauts ever since. Unlike regular bread, tortillas do not create crumbs, a potential hazard in weightlessness, and have multiple uses for any meal of the day. The crew of STS-33, NASA astronauts Frederick D. Gregory, John E. Blaha, Manley L. “Sonny” Carter, F. Story Musgrave, and Kathryn C. Thornton, celebrated Thanksgiving aboard space shuttle Discovery in 1989. Gregory and Musgrave celebrated their second Thanksgiving in space two years later, joined by fellow STS-44 NASA astronauts Terrence T. “Tom” Henricks, James S. Voss, Mario Runco, and Thomas J. Hennen aboard space shuttle Atlantis.
+                </p>
+                <img src="xt2.webp" alt="marshall star" width="600px">
+
+
+            </section>
+        </article>
+    </section>
+</body>
+
+</html>

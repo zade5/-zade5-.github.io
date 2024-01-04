@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="icon2.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000000;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            color:#0ef5e3;
+           
+        }
+        header.sw img {
+      margin-right: 100px;
+       }
+
+       header.sw b {
+       font-size: 24px;
+      margin-bottom: 0; 
+      margin-left: 10px;
+      align-items: center;
+       }
+       header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    margin-right: 10px; 
+    height: 50px; 
+    width: 50px; 
+}
+header .logo b {
+    font-size: 24px;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section {
+            padding: 50px;
+        }
+
+        h1, h2 {
+            color: #0ef5e3;
+        }
+        #background-video {
+          width: 100vw;
+          height: 100vh;
+          object-fit: cover;
+          position: fixed;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          z-index: -1;
+         }
+
+     .card {
+            position: relative;
+            left:60px;
+            width: 300px;
+            height: 200px;
+            background-color: #0f0e0e;
+            background-image: url(nebula1.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            perspective: 1000px;
+            box-shadow: 0 0 0 5px #2f4241;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            } 
+
+           .card svg {
+           width: 48px;
+           fill: #111111;
+           transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+           }
+
+           .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+            }
+
+            .card__content {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              padding: 20px;
+              text-decoration-color: aliceblue;
+              box-sizing: border-box;
+              background-color: #070707;
+              transform: rotateX(-90deg);
+              transform-origin: bottom;
+              transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+              }
+
+            .card:hover .card__content {
+             transform: rotateX(0deg);
+             }
+
+             .card__title {
+            margin: 0;
+            font-size: 24px;
+            color:#0ef5e3;
+            font-weight: 700;
+            }
+
+            .card:hover svg {
+              scale: 0;
+             }
+
+            .card__description {
+             margin: 10px 0 0;
+             font-size: 14px;
+             color: #faeeee;
+             line-height: 1.4;
+             }
+    .card1 {
+        position:relative;
+        left:490px;
+        top: -399px;;
+        width: 300px;
+        height: 200px;
+        background-color: #000000;
+        background-image: url(blackhole2.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        perspective: 1000px;
+        box-shadow: 0 0 0 5px  #2f4241;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+       }
+
+       .card1 svg {
+        width: 48px;
+        fill: #000000;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     }
+
+    .card1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    }
+
+    .card1__content {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+    height: 100%;
+     padding: 20px;
+      box-sizing: border-box;
+     background-color:#000;
+     transform: rotateX(-90deg);
+     transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   }
+
+    .card1:hover .card1__content {
+     transform: rotateX(0deg);
+    }
+
+    .card1__title {
+    margin: 0;
+    font-size: 24px;
+      color: #0ef5e3;
+    font-weight: 700;
+    }
+
+   .card1:hover svg {
+   scale: 0;
+  }
+
+  .card1__description {
+    margin: 10px 0 0;
+   font-size: 14px;
+   color:#d2e9e7;
+   line-height: 1.4;
+   }
+   .card2 {
+        position:relative;
+        left:910px;
+        top: -797px;;
+        width: 300px;
+        height: 200px;
+        background-color: #000000;
+        background-image: url(neutron\ star.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        perspective: 1000px;
+        box-shadow: 0 0 0 5px  #2f4241;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+       }
+
+       .card2 svg {
+        width: 48px;
+        fill: #000000;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     }
+
+    .card2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    }
+
+    .card2__content {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+    height: 100%;
+     padding: 20px;
+      box-sizing: border-box;
+     background-color:#000;
+     transform: rotateX(-90deg);
+     transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   }
+
+    .card2:hover .card2__content {
+     transform: rotateX(0deg);
+    }
+
+    .card2__title {
+    margin: 0;
+    font-size: 24px;
+      color: #0ef5e3;
+    font-weight: 700;
+    }
+
+   .card2:hover svg {
+   scale: 0;
+  }
+
+  .card2__description {
+    margin: 10px 0 0;
+   font-size: 14px;
+   color:#d2e9e7;
+   line-height: 1.4;
+   }
+
+        .card3 {
+            position: relative;
+            top:60px;
+            left:60px;
+            width: 300px;
+            height: 200px;
+            background-color: #0f0e0e;
+            background-image: url(qausar.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            perspective: 1000px;
+            box-shadow: 0 0 0 5px #2f4241;
+            
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            } 
+
+           .card3 svg {
+           width: 48px;
+           fill: #111111;
+           transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+           }
+
+           .card3:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+            }
+
+            .card3__content {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              padding: 20px;
+              text-decoration-color: aliceblue;
+              box-sizing: border-box;
+              background-color: #070707;
+              transform: rotateX(-90deg);
+              transform-origin: bottom;
+              transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+              }
+
+            .card3:hover .card3__content {
+             transform: rotateX(0deg);
+             }
+
+             .card3__title {
+            margin: 0;
+            font-size: 24px;
+            color:#0ef5e3;
+            font-weight: 700;
+            }
+
+            .card3:hover svg {
+              scale: 0;
+             }
+
+            .card3__description {
+             margin: 10px 0 0;
+             font-size: 14px;
+             color: #faeeee;
+             line-height: 1.4;
+             }
+             .card4 {
+        position:relative;
+        left:490px;
+        top: -340px;;
+        width: 300px;
+        height: 200px;
+        background-color: #000000;
+        background-image: url(supernova1.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        perspective: 1000px;
+        box-shadow: 0 0 0 5px #2f4241;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+       }
+
+       .card4 svg {
+        width: 48px;
+        fill: #000000;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     }
+
+    .card4:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    }
+
+    .card4__content {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+    height: 100%;
+     padding: 20px;
+      box-sizing: border-box;
+     background-color:#000;
+     transform: rotateX(-90deg);
+     transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   }
+
+    .card4:hover .card4__content {
+     transform: rotateX(0deg);
+    }
+
+    .card4__title {
+    margin: 0;
+    font-size: 24px;
+      color: #0ef5e3;
+    font-weight: 700;
+    }
+
+   .card4:hover svg {
+   scale: 0;
+  }
+
+  .card4__description {
+    margin: 10px 0 0;
+   font-size: 14px;
+   color:#d2e9e7;
+   line-height: 1.4;
+   }
+   .card5 {
+        position:relative;
+        left:910px;
+        top: -730px;;
+        width: 300px;
+        height: 200px;
+        background-color: #000000;
+        background-image: url(rock.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        perspective: 1000px;
+        box-shadow: 0 0 0 5px #2f4241;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+       }
+
+       .card5 svg {
+        width: 48px;
+        fill: #000000;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     }
+
+    .card5:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    }
+
+    .card5__content {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+    height: 100%;
+     padding: 20px;
+      box-sizing: border-box;
+     background-color:#000;
+     transform: rotateX(-90deg);
+     transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   }
+
+    .card5:hover .card5__content {
+     transform: rotateX(0deg);
+    }
+
+    .card5__title {
+    margin: 0;
+    font-size: 24px;
+      color: #0ef5e3;
+    font-weight: 700;
+    }
+
+   .card5:hover svg {
+   scale: 0;
+  }
+
+  .card5__description {
+    margin: 10px 0 0;
+   font-size: 14px;
+   color:#d2e9e7;
+   line-height: 1.4;
+   }
+   .button {
+          margin: 0;
+          height: auto;
+          background: transparent;
+          padding: 0;
+          border: none;
+          cursor: pointer;
+        }
+
+        .button {
+       --border-right: 6px;
+       --text-stroke-color: #0ef5e3;
+       --animation-color:  #0ef5e3;
+       --fs-size: 2em;
+       letter-spacing: 3px;
+       text-decoration: none;
+       font-size: var(--fs-size);
+       font-family: "Arial";
+       position: relative;
+       text-transform: uppercase;
+       color: transparent;
+       -webkit-text-stroke: 1px var(--text-stroke-color);
+      }
+/* hover krne ke lye */
+     .hover-text {
+      position: absolute;
+      box-sizing: border-box;
+      content: attr(data-text);
+      color: var(--animation-color);
+      width: 0%;
+      inset: 0;
+      border-right: var(--border-right) solid var(--animation-color);
+      overflow: hidden;
+      transition: 0.5s;
+      -webkit-text-stroke: 1px var(--animation-color); 
+      }
+/* hover */
+     .button:hover .hover-text {
+      width: 100%;
+      filter: drop-shadow(0 0 23px var(--animation-color))
+      }
+
+        footer {
+            background-color: #141414;
+            padding: 10px;
+            text-align: center;
+        }
+</style>
+</head>
+
+<body><header clas="sw">
+  <div class="logo">
+    <img src="icon2.png" alt="Space Wizards Logo">
+    <b>Space Wizards</b>
+</div>
+ 
+  
+    <nav>
+      
+        <ul>
+            <li><a href="home.html"
+                    <button class="button" data-text="Awesome">
+                    <span class="actual-text">&nbsp;Home&nbsp;</span>
+                    <span aria-hidden="true" class="hover-text">&nbsp;Home&nbsp;</span>
+                     </button></a></li>
+           
+            <li><a href="publications.html"
+                    <button class="button" data-text="Awesome">
+                    <span class="actual-text">&nbsp;Publications&nbsp;</span>
+                    <span aria-hidden="true" class="hover-text">&nbsp;Publications&nbsp;</span>
+                     </button></a></li>
+            <li><a href="about.html"
+                    <button class="button" data-text="Awesome">
+                    <span class="actual-text">&nbsp;About&nbsp;</span>
+                    <span aria-hidden="true" class="hover-text">&nbsp;About&nbsp;</span>
+                    </button></a></li>
+            
+        </ul>
+    </nav></header>
+    <video id="background-video" autoplay loop muted >
+        <source src="spacewizards.mp4" type="video/mp4">
+        </video>
+    <section id="home">
+        
+        <h1>Welcome to Astrophysics Universe</h1>
+        <p>Explore the wonders of the universe, from black holes to galaxies and beyond.</p>
+        
+    </div>
+    </section>
+    <div class="card">
+        <svg></svg>
+        <div class="card__content">
+          <p class="card__title">Nebula</p>
+          <p class="card__description">A nebula is a giant cloud of dust and gas in space. Some nebulae come from the gas and dust thrown out by the explosion of a dying star, such as a supernova. Other nebulae are regions where new stars are beginning to form. </p>
+        </div>
+    </div>
+
+    <div class="card3">
+        <svg xmlns="" viewBox=""><path d=""></path></svg>
+        <div class="card3__content">
+          <p class="card3__title">Qausar</p>
+          <p class="card3__description">a massive and extremely remote celestial object, emitting exceptionally large amounts of energy, and typically having a starlike image in a telescope. It has been suggested that quasars contain massive black holes and may represent a stage in the evolution of some galaxies.</p>
+        </div>
+      </div>      
+      
+      <div class="card1">
+        <svg xmlns="" viewBox=""><path d=""></path></svg>
+        <div class="card1__content">
+          <p class="card1__title">Black hole</p>
+          <p class="card1__description">A black hole is a cosmic body of extremely intense gravity from which even light cannot escape. Black holes usually cannot be observed directly, but they can be “observed” by the effects of their enormous gravitational fields on nearby matter.</p>
+        </div>
+      </div>
+      <div class="card4">
+        <svg xmlns="" viewBox=""><path d=""></path></svg>
+        <div class="card4__content">
+          <p class="card4__title">Supernova</p>
+          <p class="card4__description">A supernova is a powerful and luminous explosion of a star. A supernova occurs during the last evolutionary stages of a massive star or when a white dwarf is triggered into runaway nuclear fusion.</p>
+        </div>
+      </div>
+      <div class="card2">
+        <svg xmlns="" viewBox=""><path d=""></path></svg>
+        <div class="card2__content">
+          <p class="card2__title">Neutron Star</p>
+          <p class="card2__description">Neutron stars are the remains of the cores of massive stars that have reached the end of their lives.They are one of the two possible evolutionary endpoints of the most massive stars, the other being black holes.</p>
+        </div>
+      </div>
+      <div class="card5">
+        <div class="card5__content">
+          <p class="card5__title">Oumuamua</p>
+          <p class="card5__description">Oumuamua is the first known interstellar object detected passing through our solar system. Discovered in 2017, it’s named after the Hawaiian term for “scout” or “messenger”. It’s distinguished by its high speed and its tumbling motion. Its origin and age remain unknown.</p>
+        </div>
+      </div>
+      
+    
+    
+</body>
+</html>
